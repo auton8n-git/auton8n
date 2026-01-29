@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    {
+      "name": "Shopify Trigger",
+      "type": "n8n-nodes-base.shopifyTrigger",
+      "position": [
+        450,
+        450
+      ],
+      "webhookId": "fd11b3d8-ff82-4902-89cc-c93b36ae38e7",
+      "parameters": {
+        "topic": "orders/create"
+      },
+      "credentials": {
+        "shopifyApi": "shopify_creds"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "connections": {},
+  "meta": {
+    "description": "Workflow using trigger with 1 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "trigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:09.030083"
+  }
+}

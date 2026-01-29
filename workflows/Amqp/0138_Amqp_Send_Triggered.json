@@ -1,0 +1,33 @@
+{
+  "id": "135",
+  "name": "Receive messages for an ActiveMQ queue via AMQP Trigger",
+  "nodes": [
+    {
+      "name": "AMQP Trigger",
+      "type": "n8n-nodes-base.amqpTrigger",
+      "position": [
+        650,
+        200
+      ],
+      "parameters": {
+        "sink": ""
+      },
+      "credentials": {
+        "amqp": ""
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {},
+  "meta": {
+    "description": "Workflow using Amqptrigger with 1 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "Amqptrigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.529155"
+  }
+}

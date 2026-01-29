@@ -1,0 +1,57 @@
+{
+  "name": "",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        150,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "Contentful",
+      "type": "n8n-nodes-base.contentful",
+      "position": [
+        350,
+        300
+      ],
+      "parameters": {
+        "operation": "getAll",
+        "returnAll": true,
+        "additionalFields": {}
+      },
+      "credentials": {
+        "contentfulApi": "contentful"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Contentful",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using Contentful and Manualtrigger with 2 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "Contentful",
+      "Manualtrigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.974107"
+  }
+}

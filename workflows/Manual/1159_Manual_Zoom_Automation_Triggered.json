@@ -1,0 +1,63 @@
+{
+  "id": "83",
+  "name": "Creating a meeting with the Zoom node",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "Zoom",
+      "type": "n8n-nodes-base.zoom",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "topic": "Something",
+        "authentication": "",
+        "additionalFields": {}
+      },
+      "credentials": {
+        "zoomOAuth2Api": ""
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "Zoom": {
+      "main": [
+        []
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Zoom",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using Zoom and Trigger with 2 nodes. Complexity: Low",
+    "category": "Communication & Messaging",
+    "complexity": "Low",
+    "integrations": [
+      "Zoom",
+      "Trigger"
+    ],
+    "analyzed_at": "2026-01-29T09:16:37.046968"
+  }
+}

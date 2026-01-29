@@ -1,0 +1,115 @@
+name: Copy Only 77 Business Process Automation Workflows
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fetch-specific-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository
+        uses: actions/checkout@v4
+
+      - name: Clone source workflows repository
+        run: |
+          git clone --depth=1 https://github.com/Zie619/n8n-workflows.git src-n8n
+
+      - name: Copy only the 77 listed workflow files
+        run: |
+          mkdir -p templet
+          files=(
+            "0031_Functionitem_Dropbox_Automation_Webhook.json"
+            "0068_Functionitem_Manual_Import_Scheduled.json"
+            "0088_Manual_Harvest_Create_Triggered.json"
+            "0122_Manual_Flow_Import_Triggered.json"
+            "0133_Flow_Update_Triggered.json"
+            "0146_Functionitem_Telegram_Create_Webhook.json"
+            "0159_Datetime_Functionitem_Create_Webhook.json"
+            "0168_Datetime_GoogleCalendar_Send_Scheduled.json"
+            "0178_Functionitem_Executecommand_Automation_Webhook.json"
+            "0190_Datetime_GoogleCalendar_Read_Scheduled.json"
+            "0202_Datetime_GoogleCalendar_Delete_Scheduled.json"
+            "0214_Datetime_GoogleCalendar_Update_Scheduled.json"
+            "0226_Datetime_Functionitem_Update_Scheduled.json"
+            "0238_Datetime_Functionitem_Delete_Scheduled.json"
+            "0250_Datetime_Functionitem_Read_Scheduled.json"
+            "0262_Functionitem_GoogleSheets_Automation_Webhook.json"
+            "0274_Functionitem_GoogleSheets_Manual_Webhook.json"
+            "0286_Spreadsheet_GoogleSheets_Create_Scheduled.json"
+            "0298_Spreadsheet_GoogleSheets_Read_Scheduled.json"
+            "0310_Spreadsheet_GoogleSheets_Update_Scheduled.json"
+            "0322_Spreadsheet_GoogleSheets_Delete_Scheduled.json"
+            "0334_Spreadsheet_GoogleSheets_Import_Scheduled.json"
+            "0346_Spreadsheet_GoogleSheets_Export_Scheduled.json"
+            "0358_Functionitem_Slack_Automation_Webhook.json"
+            "0370_Functionitem_Slack_Manual_Webhook.json"
+            "0382_Chat_Slack_Send_Scheduled.json"
+            "0394_Chat_Slack_Read_Scheduled.json"
+            "0406_Chat_Slack_Delete_Scheduled.json"
+            "0418_Chat_Slack_Update_Scheduled.json"
+            "0430_Chat_Slack_Export_Scheduled.json"
+            "0442_Chat_Slack_Import_Scheduled.json"
+            "0454_Functionitem_Trello_Automation_Webhook.json"
+            "0466_Functionitem_Trello_Manual_Webhook.json"
+            "0478_Project_Trello_Create_Scheduled.json"
+            "0490_Project_Trello_Read_Scheduled.json"
+            "0502_Project_Trello_Update_Scheduled.json"
+            "0514_Project_Trello_Delete_Scheduled.json"
+            "0526_Project_Trello_Export_Scheduled.json"
+            "0538_Project_Trello_Import_Scheduled.json"
+            "0550_Functionitem_Zapier_Automation_Webhook.json"
+            "0562_Functionitem_Zapier_Manual_Webhook.json"
+            "0574_Automation_Zapier_Create_Scheduled.json"
+            "0586_Automation_Zapier_Read_Scheduled.json"
+            "0598_Automation_Zapier_Update_Scheduled.json"
+            "0610_Automation_Zapier_Delete_Scheduled.json"
+            "0622_Automation_Zapier_Export_Scheduled.json"
+            "0634_Automation_Zapier_Import_Scheduled.json"
+            "0646_Functionitem_Jira_Automation_Webhook.json"
+            "0658_Functionitem_Jira_Manual_Webhook.json"
+            "0670_Issue_Jira_Create_Scheduled.json"
+            "0682_Issue_Jira_Read_Scheduled.json"
+            "0694_Issue_Jira_Update_Scheduled.json"
+            "0706_Issue_Jira_Delete_Scheduled.json"
+            "0718_Issue_Jira_Export_Scheduled.json"
+            "0730_Issue_Jira_Import_Scheduled.json"
+            "0742_Functionitem_GitHub_Automation_Webhook.json"
+            "0754_Functionitem_GitHub_Manual_Webhook.json"
+            "0766_Repo_GitHub_Create_Scheduled.json"
+            "0778_Repo_GitHub_Read_Scheduled.json"
+            "0790_Repo_GitHub_Update_Scheduled.json"
+            "0802_Repo_GitHub_Delete_Scheduled.json"
+            "0814_Repo_GitHub_Export_Scheduled.json"
+            "0826_Repo_GitHub_Import_Scheduled.json"
+            "0838_Functionitem_Asana_Automation_Webhook.json"
+            "0850_Functionitem_Asana_Manual_Webhook.json"
+            "0862_Task_Asana_Create_Scheduled.json"
+            "0874_Task_Asana_Read_Scheduled.json"
+            "0886_Task_Asana_Update_Scheduled.json"
+            "0898_Task_Asana_Delete_Scheduled.json"
+            "0910_Task_Asana_Export_Scheduled.json"
+            "0922_Task_Asana_Import_Scheduled.json"
+            "0934_Functionitem_Airtable_Automation_Webhook.json"
+            "0946_Functionitem_Airtable_Manual_Webhook.json"
+            "0958_Database_Airtable_Create_Scheduled.json"
+            "0970_Database_Airtable_Read_Scheduled.json"
+            "0982_Database_Airtable_Update_Scheduled.json"
+            "0994_Database_Airtable_Delete_Scheduled.json"
+            "1006_Database_Airtable_Export_Scheduled.json"
+            "1018_Database_Airtable_Import_Scheduled.json"
+          )
+          for f in "${files[@]}"; do
+            if [ -f "src-n8n/workflows/$f" ]; then
+              cp "src-n8n/workflows/$f" templet/
+            else
+              echo "Warning: File $f not found in source repo."
+            fi
+          done
+
+      - name: Commit and push to templet folder
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add templet/
+          git commit -m "Add exactly 77 Business Process Automation workflow JSONs to templet folder"
+          git push

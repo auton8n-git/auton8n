@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        200
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "Microsoft To Do",
+      "type": "n8n-nodes-base.microsoftToDo",
+      "position": [
+        450,
+        200
+      ],
+      "parameters": {
+        "title": "Document Microsoft To Do node",
+        "operation": "create",
+        "taskListId": "AQMkADAwATNiZmYAZC0zOTkAMy02ZWZjLTAwAi0wMAoALgAAA3i1fHMTrftIhQBzhywL64UBAFB0wRiJW1FJmmlvlAkVFQA-AAACARIAAAA=",
+        "additionalFields": {
+          "importance": "high"
+        }
+      },
+      "credentials": {
+        "microsoftToDoOAuth2Api": "Microsoft OAuth Credentials"
+      },
+      "typeVersion": 1
+    },
+    {
+      "name": "Microsoft To Do1",
+      "type": "n8n-nodes-base.microsoftToDo",
+      "position": [
+        650,
+        200
+      ],
+      "parameters": {
+        "taskId": "={{$json[\"id\"]}}",
+        "operation": "update",
+        "taskListId": "={{$node[\"Microsoft To Do\"].parameter[\"taskListId\"]}}",
+        "updateFields": {
+          "status": "inProgress"
+        }
+      },
+      "credentials": {
+        "microsoftToDoOAuth2Api": "Microsoft OAuth Credentials"
+      },
+      "typeVersion": 1
+    },
+    {
+      "name": "Microsoft To Do2",
+      "type": "n8n-nodes-base.microsoftToDo",
+      "position": [
+        850,
+        200
+      ],
+      "parameters": {
+        "taskId": "={{$json[\"id\"]}}",
+        "taskListId": "={{$node[\"Microsoft To Do\"].parameter[\"taskListId\"]}}"
+      },
+      "credentials": {
+        "microsoftToDoOAuth2Api": "Microsoft OAuth Credentials"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "connections": {
+    "Microsoft To Do": {
+      "main": [
+        [
+          {
+            "node": "Microsoft To Do1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Microsoft To Do1": {
+      "main": [
+        [
+          {
+            "node": "Microsoft To Do2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Microsoft To Do",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using Microsofttodo and Manualtrigger with 4 nodes. Complexity: Low",
+    "category": "Communication & Messaging",
+    "complexity": "Low",
+    "integrations": [
+      "Microsofttodo",
+      "Manualtrigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.618399"
+  }
+}

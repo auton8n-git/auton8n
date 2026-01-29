@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {
+      "name": "Mailchimp Trigger",
+      "type": "n8n-nodes-base.mailchimpTrigger",
+      "position": [
+        870,
+        370
+      ],
+      "parameters": {
+        "list": "0a5a4ca5de",
+        "events": [
+          "subscribe"
+        ],
+        "sources": [
+          "api",
+          "admin",
+          "user"
+        ]
+      },
+      "credentials": {
+        "mailchimpApi": "mailchimp_creds"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "connections": {},
+  "meta": {
+    "description": "Workflow using trigger with 1 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "trigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.397753"
+  }
+}

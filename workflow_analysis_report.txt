@@ -1,0 +1,791 @@
+================================================================================
+N8N WORKFLOW ANALYSIS REPORT (OFFICIAL CATEGORIES)
+================================================================================
+
+📅 Generated: 2026-01-29 09:36:08
+
+📊 STATISTICS
+----------------------------------------
+Total Workflows: 2056
+Processed: 1406
+Errors: 650
+
+📂 BREAKDOWN BY CATEGORY
+----------------------------------------
+Business Process Automation..................  533 workflows
+Marketing & Advertising Automation...........  381 workflows
+Web Scraping & Data Extraction...............  183 workflows
+Data Processing & Analysis...................   58 workflows
+Financial & Accounting.......................   56 workflows
+AI Agent Development.........................   39 workflows
+Technical Infrastructure & DevOps............   38 workflows
+Communication & Messaging....................   34 workflows
+Cloud Storage & File Management..............   25 workflows
+Creative Design Automation...................   20 workflows
+Creative Content & Video Automation..........   13 workflows
+CRM & Sales..................................   11 workflows
+Project Management...........................    9 workflows
+E-commerce & Retail..........................    5 workflows
+Social Media Management......................    1 workflows
+
+📋 WORKFLOWS BY CATEGORY
+================================================================================
+
+AI AGENT DEVELOPMENT
+(39 workflows)
+----------------------------------------
+
+  📄 0021_HTTP_Awssqs_Automation_Scheduled.json
+     📝 Workflow using aws and Set and request and 1 more with 4 nodes, triggered via Scheduled. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: aws, Set, request, Cron
+
+  📄 0112_Manual_Awstextract_Automate_Triggered.json
+     📝 Workflow using aws and Awstextract and Manualtrigger with 3 nodes. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: aws, Awstextract, Manualtrigger
+
+  📄 0149_Awss3_Wait_Automate_Triggered.json
+     📝 Workflow using 2 and Set and Wait and 4 more with 8 nodes. Complexity: Medium
+     📊 Nodes: 8, Complexity: Medium
+     🔌 Integrations: 2, Set, Wait, aws, 1
+
+  📄 0150_Awsrekognition_GoogleSheets_Automation_Webhook.json
+     📝 Workflow using Set and aws and Function and 2 more with 6 nodes. Complexity: Medium
+     📊 Nodes: 6, Complexity: Medium
+     🔌 Integrations: Set, aws, Function, request, google
+
+  📄 0151_Awss3_GoogleDrive_Import_Triggered.json
+     📝 Workflow using aws and trigger and Merge with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: aws, trigger, Merge
+
+  📄 0156_HTTP_Awsrekognition_Automation_Webhook.json
+     📝 Workflow using request and Set and aws and 1 more with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: request, Set, aws, google
+
+  📄 0275_Mautic_Mondaycom_Create_Triggered.json
+     📝 Workflow using trigger and com and Stickynote with 3 nodes. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: trigger, com, Stickynote
+
+  📄 0339_Splitout_Code_Update_Webhook.json
+     📝 Workflow using Set and ’ and Toolwikipedia and 11 more with 26 nodes. Complexity: High
+     📊 Nodes: 26, Complexity: High
+     🔌 Integrations: Set, ’, Toolwikipedia, gs, update
+
+  📄 0395_Error_Mondaycom_Update_Triggered.json
+     📝 Workflow using Code and com and Datetime and 1 more with 5 nodes. Complexity: Low
+     📊 Nodes: 5, Complexity: Low
+     🔌 Integrations: Code, com, Datetime, Errortrigger
+
+  📄 0553_Code_Schedule_Send_Scheduled.json
+     📝 Workflow using Converttofile and 2:45 and s and 3 more with 6 nodes, triggered via Scheduled. Complexity: Medium
+     📊 Nodes: 6, Complexity: Medium
+     🔌 Integrations: Converttofile, 2:45, s, Code, trigger
+
+  ... and 29 more workflows in this category
+
+BUSINESS PROCESS AUTOMATION
+(533 workflows)
+----------------------------------------
+
+  📄 0002_Manual_Totp_Automation_Triggered.json
+     📝 Workflow using ’ and Totp with 2 nodes. Complexity: Low
+     📊 Nodes: 2, Complexity: Low
+     🔌 Integrations: ’, Totp
+
+  📄 0003_Bitwarden_Automate.json
+     📝 Workflow using Bitwarden with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: Bitwarden
+
+  📄 0009_Process.json
+     📝 Workflow using Function and Merge with 5 nodes. Complexity: Low
+     📊 Nodes: 5, Complexity: Low
+     🔌 Integrations: Function, Merge
+
+  📄 0010_Writebinaryfile_Create.json
+     📝 Workflow using Function and Writebinaryfile with 3 nodes. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: Function, Writebinaryfile
+
+  📄 0013_Manual_Noop_Import_Triggered.json
+     📝 Workflow using Set and Function and Noop and 1 more with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: Set, Function, Noop, Manualtrigger
+
+  📄 0032_Manual_Filemaker_Automate_Triggered.json
+     📝 Workflow using Filemaker and Manualtrigger with 5 nodes. Complexity: Low
+     📊 Nodes: 5, Complexity: Low
+     🔌 Integrations: Filemaker, Manualtrigger
+
+  📄 0038_Manual_Ical_Send_Triggered.json
+     📝 Workflow using Emailsend and Ical and Manualtrigger with 3 nodes. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: Emailsend, Ical, Manualtrigger
+
+  📄 0039_Calendly_Notion_Automate_Triggered.json
+     📝 Workflow using Notion and Calendlytrigger with 2 nodes. Complexity: Low
+     📊 Nodes: 2, Complexity: Low
+     🔌 Integrations: Notion, Calendlytrigger
+
+  📄 0043_Humanticai_Calendly_Automate_Triggered.json
+     📝 Workflow using Notion and Calendlytrigger and Humanticai with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: Notion, Calendlytrigger, Humanticai
+
+  📄 0050_Uptimerobot_Automate.json
+     📝 Workflow using Uptimerobot with 3 nodes. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: Uptimerobot
+
+  ... and 523 more workflows in this category
+
+CRM & SALES
+(11 workflows)
+----------------------------------------
+
+  📄 0071_Pipedrive_Update_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  📄 0265_Shopify_HubSpot_Create_Triggered.json
+     📝 Workflow using Set and create and find and 3 more with 8 nodes. Complexity: Medium
+     📊 Nodes: 8, Complexity: Medium
+     🔌 Integrations: Set, create, find, trigger, Noop
+
+  📄 0760_Splitout_Code_Send_Webhook.json
+     📝 Workflow using Set and opp and data and 8 more with 23 nodes. Complexity: High
+     📊 Nodes: 23, Complexity: High
+     🔌 Integrations: Set, opp, data, Aggregate, request
+
+  📄 0762_Aggregate_Stickynote_Create_Triggered.json
+     📝 Workflow using Set and sf and Lmchatazureopenai and 9 more with 27 nodes. Complexity: High
+     📊 Nodes: 27, Complexity: High
+     🔌 Integrations: Set, sf, Lmchatazureopenai, ai, sales
+
+  📄 0802_Webhook_Nocodb_Create_Webhook.json
+     📝 Workflow using Set and Nocodb and in and 7 more with 20 nodes, triggered via Webhook. Complexity: High
+     📊 Nodes: 20, Complexity: High
+     🔌 Integrations: Set, Nocodb, in, execute, Switch
+
+  📄 1006_Copper_Automate_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  📄 1021_Manual_Zohocrm_Automate_Triggered.json
+     📝 Workflow using zoho and Manualtrigger with 2 nodes. Complexity: Low
+     📊 Nodes: 2, Complexity: Low
+     🔌 Integrations: zoho, Manualtrigger
+
+  📄 1023_Keap_Automate_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  📄 1081_HubSpot_Automate_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  📄 1085_Affinity_Create_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  ... and 1 more workflows in this category
+
+CLOUD STORAGE & FILE MANAGEMENT
+(25 workflows)
+----------------------------------------
+
+  📄 0113_Emailsend_GoogleDrive_Send_Triggered.json
+     📝 Workflow using Emailsend and trigger with 2 nodes. Complexity: Low
+     📊 Nodes: 2, Complexity: Low
+     🔌 Integrations: Emailsend, trigger
+
+  📄 0187_Onfleet_GoogleDrive_Create_Triggered.json
+     📝 Workflow using trigger and Onfleet with 2 nodes. Complexity: Low
+     📊 Nodes: 2, Complexity: Low
+     🔌 Integrations: trigger, Onfleet
+
+  📄 0258_Microsoftexcel_Manual_Create_Triggered.json
+     📝 Workflow using Set and microsoft and Renamekeys and 5 more with 12 nodes. Complexity: Medium
+     📊 Nodes: 12, Complexity: Medium
+     🔌 Integrations: Set, microsoft, Renamekeys, create, Manualtrigger
+
+  📄 0272_Notion_GoogleDrive_Create_Triggered.json
+     📝 Workflow using Notion and trigger with 2 nodes. Complexity: Low
+     📊 Nodes: 2, Complexity: Low
+     🔌 Integrations: Notion, trigger
+
+  📄 0312_Manual_HTTP_Create_Webhook.json
+     📝 Workflow using microsoft and request and Manualtrigger with 5 nodes. Complexity: Low
+     📊 Nodes: 5, Complexity: Low
+     🔌 Integrations: microsoft, request, Manualtrigger
+
+  📄 0592_Stopanderror_Awss3_Automation_Webhook.json
+     📝 Workflow using Set and ’ and subpath and 6 more with 17 nodes, triggered via Scheduled. Complexity: Medium
+     📊 Nodes: 17, Complexity: Medium
+     🔌 Integrations: Set, ’, subpath, Scheduletrigger, request
+
+  📄 0595_Filter_Manual_Send_Triggered.json
+     📝 Workflow using microsoft and Set and ai and 8 more with 36 nodes. Complexity: High
+     📊 Nodes: 36, Complexity: High
+     🔌 Integrations: microsoft, Set, ai, ’, Switch
+
+  📄 0692_Webhook_Code_Update_Webhook.json
+     📝 Workflow using Set and microsoft and Lmchatgooglegemini and 10 more with 39 nodes, triggered via Webhook. Complexity: High
+     📊 Nodes: 39, Complexity: High
+     🔌 Integrations: Set, microsoft, Lmchatgooglegemini, Switch, request
+
+  📄 0693_Code_Webhook_Create_Webhook.json
+     📝 Workflow using Set and microsoft and Lmchatopenai and 7 more with 27 nodes, triggered via Webhook. Complexity: High
+     📊 Nodes: 27, Complexity: High
+     🔌 Integrations: Set, microsoft, Lmchatopenai, request, tool
+
+  📄 0820_Wait_Code_Send_Webhook.json
+     📝 Workflow using Set and Wait and Textclassifier and 13 more with 24 nodes, triggered via Scheduled. Complexity: High
+     📊 Nodes: 24, Complexity: High
+     🔌 Integrations: Set, Wait, Textclassifier, microsoft, Lmchatgooglegemini
+
+  ... and 15 more workflows in this category
+
+COMMUNICATION & MESSAGING
+(34 workflows)
+----------------------------------------
+
+  📄 0670_Code_Microsoftoutlook_Create_Webhook.json
+     📝 Workflow using Set and variables and Jira and 5 more with 18 nodes. Complexity: Medium
+     📊 Nodes: 18, Complexity: Medium
+     🔌 Integrations: Set, variables, Jira, request, trigger
+
+  📄 0685_Limit_Webhook_Send_Webhook.json
+     📝 Workflow using Set and Limit and dm and 12 more with 29 nodes, triggered via Webhook. Complexity: High
+     📊 Nodes: 29, Complexity: High
+     🔌 Integrations: Set, Limit, dm, Summarize, channel
+
+  📄 0689_Stickynote_Gmail_Create_Triggered.json
+     📝 Workflow using Wait and Lmchatopenai and tool and 4 more with 13 nodes. Complexity: Medium
+     📊 Nodes: 13, Complexity: Medium
+     🔌 Integrations: Wait, Lmchatopenai, tool, trigger, Memorybufferwindow
+
+  📄 0704_Telegram_Automate_Triggered.json
+     📝 Workflow using s- and trigger with 5 nodes. Complexity: Low
+     📊 Nodes: 5, Complexity: Low
+     🔌 Integrations: s-, trigger
+
+  📄 0705_Telegram_Automate_Triggered.json
+     📝 Workflow using trigger and return with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: trigger, return
+
+  📄 0782_Telegram_Redis_Create_Webhook.json
+     📝 Workflow using Set and Textclassifier and memory1 and 14 more with 40 nodes. Complexity: High
+     📊 Nodes: 40, Complexity: High
+     🔌 Integrations: Set, Textclassifier, memory1, create, interview
+
+  📄 0796_Stickynote_Gmail_Create_Triggered.json
+     📝 Workflow using Textclassifier and Lmchatgooglegemini and video and 6 more with 16 nodes. Complexity: Medium
+     📊 Nodes: 16, Complexity: Medium
+     🔌 Integrations: Textclassifier, Lmchatgooglegemini, video, trigger, Stickynote
+
+  📄 0815_Telegram_Code_Update_Triggered.json
+     📝 Workflow using memory1 and Informationextractor and set and 15 more with 39 nodes. Complexity: High
+     📊 Nodes: 39, Complexity: High
+     🔌 Integrations: memory1, Informationextractor, set, after, Lmchatopenai
+
+  📄 0823_Zendesk_Update_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  📄 0834_Webhook_Slack_Create_Webhook.json
+     📝 Workflow using Set and Lmchatopenai and outlook and 6 more with 16 nodes, triggered via Webhook. Complexity: Medium
+     📊 Nodes: 16, Complexity: Medium
+     🔌 Integrations: Set, Lmchatopenai, outlook, tool, Memorybufferwindow
+
+  ... and 24 more workflows in this category
+
+CREATIVE CONTENT & VIDEO AUTOMATION
+(13 workflows)
+----------------------------------------
+
+  📄 0229_Manual_HTTP_Create_Webhook.json
+     📝 Workflow using Set and Manualtrigger and request and 3 more with 14 nodes. Complexity: Medium
+     📊 Nodes: 14, Complexity: Medium
+     🔌 Integrations: Set, Manualtrigger, request, -, Stickynote
+
+  📄 0282_Clickup_Notion_Update_Triggered.json
+     📝 Workflow using Notiontrigger and update and Notion and 2 more with 5 nodes. Complexity: Medium
+     📊 Nodes: 5, Complexity: Medium
+     🔌 Integrations: Notiontrigger, update, Notion, trigger, id
+
+  📄 0658_Code_Schedule_Create_Scheduled.json
+     📝 Workflow using Set and content and Lmchatgroq and 18 more with 32 nodes, triggered via Scheduled. Complexity: High
+     📊 Nodes: 32, Complexity: High
+     🔌 Integrations: Set, content, Lmchatgroq, resize, update
+
+  📄 0674_Limit_Webhook_Automation_Webhook.json
+     📝 Workflow using Set and webhook and Aggregate and 5 more with 40 nodes, triggered via Webhook. Complexity: High
+     📊 Nodes: 40, Complexity: High
+     🔌 Integrations: Set, webhook, Aggregate, -, trigger
+
+  📄 0757_Manual_Wordpress_Create_Webhook.json
+     📝 Workflow using Set and Chainllm and ’ and 5 more with 10 nodes. Complexity: Medium
+     📊 Nodes: 10, Complexity: Medium
+     🔌 Integrations: Set, Chainllm, ’, Lmchatopenai, update
+
+  📄 0878_HTTP_Aggregate_Import_Webhook.json
+     📝 Workflow using Set and youtube and Switch and 6 more with 20 nodes. Complexity: High
+     📊 Nodes: 20, Complexity: High
+     🔌 Integrations: Set, youtube, Switch, Aggregate, request
+
+  📄 1086_Manual_Contentful_Automation_Triggered.json
+     📝 Workflow using Contentful and Manualtrigger with 2 nodes. Complexity: Low
+     📊 Nodes: 2, Complexity: Low
+     🔌 Integrations: Contentful, Manualtrigger
+
+  📄 1428_Code_Schedule_Send_Scheduled.json
+     📝 Workflow using Set and content and Lmchatgroq and 18 more with 32 nodes, triggered via Scheduled. Complexity: High
+     📊 Nodes: 32, Complexity: High
+     🔌 Integrations: Set, content, Lmchatgroq, resize, update
+
+  📄 1429_Code_Schedule_Send_Scheduled.json
+     📝 Workflow using Set and content and Lmchatgroq and 18 more with 32 nodes, triggered via Scheduled. Complexity: High
+     📊 Nodes: 32, Complexity: High
+     🔌 Integrations: Set, content, Lmchatgroq, resize, update
+
+  📄 1463_Splitout_Code_Automate_Webhook.json
+     📝 Workflow using youtube and Chattrigger and api and 10 more with 29 nodes. Complexity: High
+     📊 Nodes: 29, Complexity: High
+     🔌 Integrations: youtube, Chattrigger, api, variables, Lmchatopenai
+
+  ... and 3 more workflows in this category
+
+CREATIVE DESIGN AUTOMATION
+(20 workflows)
+----------------------------------------
+
+  📄 0022_Manual_Webflow_Automate_Triggered.json
+     📝 Workflow using web and Manualtrigger with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: web, Manualtrigger
+
+  📄 0106_Manual_Drift_Create_Triggered.json
+     📝 Workflow using t and Manualtrigger with 2 nodes. Complexity: Low
+     📊 Nodes: 2, Complexity: Low
+     🔌 Integrations: t, Manualtrigger
+
+  📄 0270_Webhook_Discord_Automate_Webhook.json
+     📝 Workflow using Set and user and helpdesk and 6 more with 9 nodes, triggered via Webhook. Complexity: Medium
+     📊 Nodes: 9, Complexity: Medium
+     🔌 Integrations: Set, user, helpdesk, Switch, Noop
+
+  📄 0343_Manual_Editimage_Create_Webhook.json
+     📝 Workflow using edit and request and Manualtrigger with 3 nodes. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: edit, request, Manualtrigger
+
+  📄 0438_Code_Filter_Create_Webhook.json
+     📝 Workflow using Set and Aggregate and Notion and 10 more with 24 nodes, triggered via Webhook. Complexity: High
+     📊 Nodes: 24, Complexity: High
+     🔌 Integrations: Set, Aggregate, Notion, request, ar
+
+  📄 0451_Filter_Slack_Update_Webhook.json
+     📝 Workflow using Set and notify and artrigger and 6 more with 12 nodes. Complexity: Medium
+     📊 Nodes: 12, Complexity: Medium
+     🔌 Integrations: Set, notify, artrigger, request, ar
+
+  📄 0575_Editimage_Manual_Update_Webhook.json
+     📝 Workflow using Chainllm and Lmchatgooglegemini and ’ and 5 more with 13 nodes. Complexity: Medium
+     📊 Nodes: 13, Complexity: Medium
+     🔌 Integrations: Chainllm, Lmchatgooglegemini, ’, resize, request
+
+  📄 0579_Splitout_Editimage_Update_Triggered.json
+     📝 Workflow using Set and Chainllm and Lmchatgooglegemini and 6 more with 11 nodes. Complexity: Medium
+     📊 Nodes: 11, Complexity: Medium
+     🔌 Integrations: Set, Chainllm, Lmchatgooglegemini, ’, resize
+
+  📄 0937_HTTP_Editimage_Update_Webhook.json
+     📝 Workflow using request and Webhook and edit with 3 nodes, triggered via Webhook. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: request, Webhook, edit
+
+  📄 1040_Manual_Editimage_Update_Webhook.json
+     📝 Workflow using edit and request and Manualtrigger with 3 nodes. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: edit, request, Manualtrigger
+
+  ... and 10 more workflows in this category
+
+DATA PROCESSING & ANALYSIS
+(58 workflows)
+----------------------------------------
+
+  📄 0067_Manual_Uproc_Automation_Triggered.json
+     📝 Workflow using create and parse and Manualtrigger with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: create, parse, Manualtrigger
+
+  📄 0082_GoogleSheets_Interval_Process_Scheduled.json
+     📝 Workflow using read and Interval and Spreadsheetfile and 1 more with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: read, Interval, Spreadsheetfile, upload
+
+  📄 0183_Strapi_Webhook_Automation_Webhook.json
+     📝 Workflow using Set and Interval and store and 4 more with 14 nodes, triggered via Webhook. Complexity: Medium
+     📊 Nodes: 14, Complexity: Medium
+     🔌 Integrations: Set, Interval, store, search, Merge
+
+  📄 0189_Manual_Quickbase_Create_Triggered.json
+     📝 Workflow using Set and quick and Manualtrigger with 6 nodes. Complexity: Low
+     📊 Nodes: 6, Complexity: Low
+     🔌 Integrations: Set, quick, Manualtrigger
+
+  📄 0190_Executecommand_Functionitem_Automate.json
+     📝 Workflow using Executecommand and data with 3 nodes. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: Executecommand, data
+
+  📄 0191_Manual_Slack_Automation_Webhook.json
+     📝 Workflow using request and post and Manualtrigger with 3 nodes. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: request, post, Manualtrigger
+
+  📄 0236_Manual_GoogleSheets_Create_Scheduled.json
+     📝 Workflow using Set and read and Interval and 3 more with 7 nodes. Complexity: Medium
+     📊 Nodes: 7, Complexity: Medium
+     🔌 Integrations: Set, read, Interval, Manualtrigger, Noop
+
+  📄 0237_GoogleSheets_Spreadsheetfile_Create_Webhook.json
+     📝 Workflow using read and Webhook and Spreadsheetfile with 3 nodes, triggered via Webhook. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: read, Webhook, Spreadsheetfile
+
+  📄 0257_Manual_GoogleSheets_Create_Triggered.json
+     📝 Workflow using Set and read and Renamekeys and 5 more with 12 nodes. Complexity: Medium
+     📊 Nodes: 12, Complexity: Medium
+     🔌 Integrations: Set, read, Renamekeys, create, Manualtrigger
+
+  📄 0414_Webhook_Filter_Create_Webhook.json
+     📝 Workflow using user and enrichment and post and 4 more with 12 nodes, triggered via Webhook. Complexity: Medium
+     📊 Nodes: 12, Complexity: Medium
+     🔌 Integrations: user, enrichment, post, enrich, get
+
+  ... and 48 more workflows in this category
+
+E-COMMERCE & RETAIL
+(5 workflows)
+----------------------------------------
+
+  📄 0152_Shopify_Onfleet_Create_Triggered.json
+     📝 Workflow using trigger and Onfleet with 2 nodes. Complexity: Low
+     📊 Nodes: 2, Complexity: Low
+     🔌 Integrations: trigger, Onfleet
+
+  📄 0961_Shopify_Filter_Create_Triggered.json
+     📝 Workflow using trigger and Code and Filter and 1 more with 5 nodes. Complexity: Low
+     📊 Nodes: 5, Complexity: Low
+     🔌 Integrations: trigger, Code, Filter, Odoo
+
+  📄 1015_Shopify_Automate_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  📄 1132_Webhook_Extractfromfile_Process_Webhook.json
+     📝 Workflow using read and Manualtrigger and Extractfromfile and 5 more with 8 nodes, triggered via Webhook. Complexity: Medium
+     📊 Nodes: 8, Complexity: Medium
+     🔌 Integrations: read, Manualtrigger, Extractfromfile, shopify, Stickynote
+
+  📄 1786_Shopify_Filter_Create_Triggered.json
+     📝 Workflow using trigger and Code and Filter and 1 more with 5 nodes. Complexity: Low
+     📊 Nodes: 5, Complexity: Low
+     🔌 Integrations: trigger, Code, Filter, Odoo
+
+FINANCIAL & ACCOUNTING
+(56 workflows)
+----------------------------------------
+
+  📄 0034_Code_Filter_Create_Scheduled.json
+     📝 Workflow using Nocodb and Splitinbatches and create and 9 more with 30 nodes, triggered via Scheduled. Complexity: High
+     📊 Nodes: 30, Complexity: High
+     🔌 Integrations: Nocodb, Splitinbatches, create, Scheduletrigger, add
+
+  📄 0041_Chargebee_Update_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  📄 0200_Manual_Executecommand_Export_Scheduled.json
+     📝 Workflow using Manualtrigger and Cron and commit and 4 more with 7 nodes, triggered via Scheduled. Complexity: Medium
+     📊 Nodes: 7, Complexity: Medium
+     🔌 Integrations: Manualtrigger, Cron, commit, Executecommand, add
+
+  📄 0255_Functionitem_Manual_Create_Triggered.json
+     📝 Workflow using Manualtrigger and add and N8Ntrainingcustomerdatastore and 3 more with 8 nodes. Complexity: Medium
+     📊 Nodes: 8, Complexity: Medium
+     🔌 Integrations: Manualtrigger, add, N8Ntrainingcustomerdatastore, Emailsend, Itemlists
+
+  📄 0267_Functionitem_Zendesk_Create_Scheduled.json
+     📝 Workflow using person and Set and Splitinbatches and 9 more with 21 nodes, triggered via Scheduled. Complexity: High
+     📊 Nodes: 21, Complexity: High
+     🔌 Integrations: person, Set, Splitinbatches, set, Cron
+
+  📄 0334_Openai_Form_Create_Triggered.json
+     📝 Workflow using add and Stickynote and Openai and 2 more with 9 nodes. Complexity: Medium
+     📊 Nodes: 9, Complexity: Medium
+     🔌 Integrations: add, Stickynote, Openai, Merge, Formtrigger
+
+  📄 0361_Hunter_Noop_Send_Triggered.json
+     📝 Workflow using verify and add and Noop and 2 more with 7 nodes. Complexity: Medium
+     📊 Nodes: 7, Complexity: Medium
+     🔌 Integrations: verify, add, Noop, Stickynote, Formtrigger
+
+  📄 0364_HTTP_Twilio_Automate_Webhook.json
+     📝 Workflow using Set and add and request and 2 more with 6 nodes. Complexity: Medium
+     📊 Nodes: 6, Complexity: Medium
+     🔌 Integrations: Set, add, request, trigger, send
+
+  📄 0370_Code_Schedule_Create_Webhook.json
+     📝 Workflow using add and request and get and 9 more with 13 nodes, triggered via Scheduled. Complexity: Medium
+     📊 Nodes: 13, Complexity: Medium
+     🔌 Integrations: add, request, get, Code, Stickynote
+
+  📄 0382_Schedule_Spotify_Create_Scheduled.json
+     📝 Workflow using Scheduletrigger and add and Switch and 3 more with 11 nodes, triggered via Scheduled. Complexity: Medium
+     📊 Nodes: 11, Complexity: Medium
+     🔌 Integrations: Scheduletrigger, add, Switch, get, Stickynote
+
+  ... and 46 more workflows in this category
+
+MARKETING & ADVERTISING AUTOMATION
+(381 workflows)
+----------------------------------------
+
+  📄 0008_Slack_Stripe_Create_Triggered.json
+     📝 Workflow using send and Stripetrigger and find and 1 more with 8 nodes. Complexity: Medium
+     📊 Nodes: 8, Complexity: Medium
+     🔌 Integrations: send, Stripetrigger, find, update
+
+  📄 0019_Manual_Uproc_Send_Triggered.json
+     📝 Workflow using check and create and Manualtrigger with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: check, create, Manualtrigger
+
+  📄 0025_Manual_Uproc_Automation_Triggered.json
+     📝 Workflow using send and get and create and 1 more with 6 nodes. Complexity: Medium
+     📊 Nodes: 6, Complexity: Medium
+     🔌 Integrations: send, get, create, Manualtrigger
+
+  📄 0031_Functionitem_Dropbox_Automation_Webhook.json
+     📝 Workflow using generate and create and Manualtrigger and 4 more with 10 nodes. Complexity: Medium
+     📊 Nodes: 10, Complexity: Medium
+     🔌 Integrations: generate, create, Manualtrigger, request, upload
+
+  📄 0045_Manual_Telegram_Import_Triggered.json
+     📝 Workflow using send and get and create and 1 more with 5 nodes. Complexity: Low
+     📊 Nodes: 5, Complexity: Low
+     🔌 Integrations: send, get, create, Manualtrigger
+
+  📄 0056_Manual_Uproc_Import_Triggered.json
+     📝 Workflow using get and create and Manualtrigger with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: get, create, Manualtrigger
+
+  📄 0057_Activecampaign_Create_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  📄 0063_Manual_Uproc_Import_Triggered.json
+     📝 Workflow using get and create and Manualtrigger with 3 nodes. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: get, create, Manualtrigger
+
+  📄 0094_Noop_Gmail_Create_Triggered.json
+     📝 Workflow using Set and create and Typeformtrigger and 3 more with 7 nodes. Complexity: Medium
+     📊 Nodes: 7, Complexity: Medium
+     🔌 Integrations: Set, create, Typeformtrigger, update, Noop
+
+  📄 0153_HTTP_Dropbox_Update_Webhook.json
+     📝 Workflow using Set and request and to and 1 more with 5 nodes. Complexity: Low
+     📊 Nodes: 5, Complexity: Low
+     🔌 Integrations: Set, request, to, drop
+
+  ... and 371 more workflows in this category
+
+PROJECT MANAGEMENT
+(9 workflows)
+----------------------------------------
+
+  📄 0047_Clickup_Update_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  📄 0076_Trello_Update_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  📄 0469_Clickup_Respondtowebhook_Create_Webhook.json
+     📝 Workflow using Set and create and command and 2 more with 6 nodes, triggered via Webhook. Complexity: Medium
+     📊 Nodes: 6, Complexity: Medium
+     🔌 Integrations: Set, create, command, Stickynote, Respondtowebhook
+
+  📄 0538_Wait_Splitout_Send_Webhook.json
+     📝 Workflow using Set and Textsplitterrecursivecharactertextsplitter and Lmchatopenai and 19 more with 38 nodes. Complexity: High
+     📊 Nodes: 38, Complexity: High
+     🔌 Integrations: Set, Textsplitterrecursivecharactertextsplitter, Lmchatopenai, request, Extractfromfile
+
+  📄 0598_Code_Editimage_Update_Webhook.json
+     📝 Workflow using Set and let and request and 5 more with 16 nodes. Complexity: Medium
+     📊 Nodes: 16, Complexity: Medium
+     🔌 Integrations: Set, let, request, get, Code
+
+  📄 0617_Manual_Noop_Automation_Webhook.json
+     📝 Workflow using Set and make and ’ and 5 more with 18 nodes. Complexity: Medium
+     📊 Nodes: 18, Complexity: Medium
+     🔌 Integrations: Set, make, ’, find, request
+
+  📄 0967_Asana_Update_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  📄 1114_Taiga_Update_Triggered.json
+     📝 Workflow using trigger with 1 nodes. Complexity: Low
+     📊 Nodes: 1, Complexity: Low
+     🔌 Integrations: trigger
+
+  📄 1359_Wait_Splitout_Create_Webhook.json
+     📝 Workflow using Set and Textsplitterrecursivecharactertextsplitter and Lmchatopenai and 19 more with 38 nodes. Complexity: High
+     📊 Nodes: 38, Complexity: High
+     🔌 Integrations: Set, Textsplitterrecursivecharactertextsplitter, Lmchatopenai, request, Extractfromfile
+
+SOCIAL MEDIA MANAGEMENT
+(1 workflows)
+----------------------------------------
+
+  📄 1939_Linkedin_Code_Automation_Webhook.json
+     📝 Workflow using Scheduletrigger and publish and Aggregate and 5 more with 13 nodes, triggered via Scheduled. Complexity: Medium
+     📊 Nodes: 13, Complexity: Medium
+     🔌 Integrations: Scheduletrigger, publish, Aggregate, Notion, request
+
+TECHNICAL INFRASTRUCTURE & DEVOPS
+(38 workflows)
+----------------------------------------
+
+  📄 0061_Noop_GitHub_Automate_Triggered.json
+     📝 Workflow using Set and trigger and Noop and 1 more with 5 nodes. Complexity: Low
+     📊 Nodes: 5, Complexity: Low
+     🔌 Integrations: Set, trigger, Noop, hub
+
+  📄 0093_HTTP_GitHub_Create_Scheduled.json
+     📝 Workflow using hub and data and Function and 4 more with 11 nodes, triggered via Scheduled. Complexity: Medium
+     📊 Nodes: 11, Complexity: Medium
+     🔌 Integrations: hub, data, Function, Cron, request
+
+  📄 0096_Noop_GitHub_Automate_Triggered.json
+     📝 Workflow using hub and Noop and hubtrigger and 1 more with 10 nodes. Complexity: Medium
+     📊 Nodes: 10, Complexity: Medium
+     🔌 Integrations: hub, Noop, hubtrigger, Switch
+
+  📄 0108_Noop_GitHub_Create_Triggered.json
+     📝 Workflow using hub and Noop and Switch and 1 more with 11 nodes. Complexity: Medium
+     📊 Nodes: 11, Complexity: Medium
+     🔌 Integrations: hub, Noop, Switch, hubtrigger
+
+  📄 0135_GitHub_Cron_Create_Scheduled.json
+     📝 Workflow using hub and Cron and Function and 2 more with 6 nodes, triggered via Scheduled. Complexity: Medium
+     📊 Nodes: 6, Complexity: Medium
+     🔌 Integrations: hub, Cron, Function, lab, Merge
+
+  📄 0143_HTTP_Gitlab_Automation_Webhook.json
+     📝 Workflow using request and labtrigger with 3 nodes. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: request, labtrigger
+
+  📄 0182_Code_GitHub_Create_Scheduled.json
+     📝 Workflow using Set and N8N and Splitinbatches and 14 more with 26 nodes, triggered via Scheduled. Complexity: High
+     📊 Nodes: 26, Complexity: High
+     🔌 Integrations: Set, N8N, Splitinbatches, hub, Manualtrigger
+
+  📄 0198_Manual_Thehive_Create_Triggered.json
+     📝 Workflow using Thehive and Manualtrigger with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: Thehive, Manualtrigger
+
+  📄 0252_HTTP_GitHub_Create_Webhook.json
+     📝 Workflow using Set and create and hub and 2 more with 8 nodes. Complexity: Medium
+     📊 Nodes: 8, Complexity: Medium
+     🔌 Integrations: Set, create, hub, search, hubtrigger
+
+  📄 0279_Zendesk_GitHub_Create_Webhook.json
+     📝 Workflow using hub and Function and update and 2 more with 7 nodes, triggered via Webhook. Complexity: Medium
+     📊 Nodes: 7, Complexity: Medium
+     🔌 Integrations: hub, Function, update, get, ticket
+
+  ... and 28 more workflows in this category
+
+WEB SCRAPING & DATA EXTRACTION
+(183 workflows)
+----------------------------------------
+
+  📄 0004_GoogleSheets_Typeform_Automate_Triggered.json
+     📝 Workflow using Set and Typeformtrigger and google with 5 nodes. Complexity: Low
+     📊 Nodes: 5, Complexity: Low
+     🔌 Integrations: Set, Typeformtrigger, google
+
+  📄 0015_HTTP_Cron_Update_Webhook.json
+     📝 Workflow using request and Set and Amqp and 1 more with 4 nodes, triggered via Scheduled. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: request, Set, Amqp, Cron
+
+  📄 0016_Manual_Googleslides_Automate_Triggered.json
+     📝 Workflow using google and Manualtrigger with 3 nodes. Complexity: Low
+     📊 Nodes: 3, Complexity: Low
+     🔌 Integrations: google, Manualtrigger
+
+  📄 0023_HTTP_Googlebigquery_Automation_Scheduled.json
+     📝 Workflow using Googlebigquery and Set and request and 1 more with 4 nodes, triggered via Scheduled. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: Googlebigquery, Set, request, Cron
+
+  📄 0035_GoogleSheets_Webhook_Automate_Webhook.json
+     📝 Workflow using Webhook and google with 2 nodes, triggered via Webhook. Complexity: Low
+     📊 Nodes: 2, Complexity: Low
+     🔌 Integrations: Webhook, google
+
+  📄 0037_Manual_Googlebooks_Create_Triggered.json
+     📝 Workflow using google and Manualtrigger with 4 nodes. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: google, Manualtrigger
+
+  📄 0077_HTTP_Noop_Sync_Webhook.json
+     📝 Workflow using Set and Switch and request and 2 more with 7 nodes, triggered via Webhook. Complexity: Medium
+     📊 Nodes: 7, Complexity: Medium
+     🔌 Integrations: Set, Switch, request, Noop, Webhook
+
+  📄 0083_Noop_HTTP_Automation_Webhook.json
+     📝 Workflow using Set and Switch and request and 2 more with 21 nodes, triggered via Webhook. Complexity: Medium
+     📊 Nodes: 21, Complexity: Medium
+     🔌 Integrations: Set, Switch, request, Noop, Webhook
+
+  📄 0136_HTTP_Googlefirebaserealtimedatabase_Update_Webhook.json
+     📝 Workflow using request and Set and Googlefirebaserealtimedatabase and 1 more with 4 nodes, triggered via Scheduled. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: request, Set, Googlefirebaserealtimedatabase, Cron
+
+  📄 0144_HTTP_Twitter_Automation_Scheduled.json
+     📝 Workflow using request and tweet and Cron with 4 nodes, triggered via Scheduled. Complexity: Low
+     📊 Nodes: 4, Complexity: Low
+     🔌 Integrations: request, tweet, Cron
+
+  ... and 173 more workflows in this category

@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "Hunter",
+      "type": "n8n-nodes-base.hunter",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "email": "user@example.com",
+        "operation": "emailVerifier"
+      },
+      "credentials": {
+        "hunterApi": "hunter api creds"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Hunter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using Hunter and Trigger with 2 nodes. Complexity: Low",
+    "category": "Marketing & Advertising Automation",
+    "complexity": "Low",
+    "integrations": [
+      "Hunter",
+      "Trigger"
+    ],
+    "analyzed_at": "2026-01-29T09:16:37.032721"
+  }
+}

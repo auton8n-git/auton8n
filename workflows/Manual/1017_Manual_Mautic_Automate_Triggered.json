@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "Mautic",
+      "type": "n8n-nodes-base.mautic",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "options": {},
+        "operation": "getAll",
+        "authentication": "oAuth2"
+      },
+      "credentials": {
+        "mauticOAuth2Api": "mautic_creds"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Mautic",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using Mautic and Trigger with 2 nodes. Complexity: Low",
+    "category": "Marketing & Advertising Automation",
+    "complexity": "Low",
+    "integrations": [
+      "Mautic",
+      "Trigger"
+    ],
+    "analyzed_at": "2026-01-29T09:16:37.036895"
+  }
+}

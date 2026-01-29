@@ -1,0 +1,57 @@
+{
+  "id": "2",
+  "name": "Add task to tasklist",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        500,
+        310
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "Google Tasks",
+      "type": "n8n-nodes-base.googleTasks",
+      "position": [
+        920,
+        310
+      ],
+      "parameters": {
+        "task": "MDY3OTAyNjUyMDk5NDY5ODIzMzM6MDow",
+        "additionalFields": {}
+      },
+      "credentials": {
+        "googleTasksOAuth2Api": "shraddha"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Google Tasks",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using s and Manualtrigger with 2 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "s",
+      "Manualtrigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.922859"
+  }
+}

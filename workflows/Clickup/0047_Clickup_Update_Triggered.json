@@ -1,0 +1,37 @@
+{
+  "id": "110",
+  "name": "Receive updates for events in ClickUp",
+  "nodes": [
+    {
+      "name": "ClickUp Trigger",
+      "type": "n8n-nodes-base.clickUpTrigger",
+      "position": [
+        700,
+        250
+      ],
+      "parameters": {
+        "team": "",
+        "events": [
+          "*"
+        ],
+        "filters": {}
+      },
+      "credentials": {
+        "clickUpApi": ""
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {},
+  "meta": {
+    "description": "Workflow using trigger with 1 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "trigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.907369"
+  }
+}

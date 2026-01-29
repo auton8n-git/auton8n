@@ -1,0 +1,32 @@
+{
+  "id": "108",
+  "name": "Receive updates for events in Chargebee",
+  "nodes": [
+    {
+      "name": "Chargebee Trigger",
+      "type": "n8n-nodes-base.chargebeeTrigger",
+      "position": [
+        700,
+        250
+      ],
+      "parameters": {
+        "events": [
+          "*"
+        ]
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {},
+  "meta": {
+    "description": "Workflow using trigger with 1 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "trigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.781752"
+  }
+}

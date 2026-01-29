@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "name": "Mailjet Trigger",
+      "type": "n8n-nodes-base.mailjetTrigger",
+      "position": [
+        530,
+        400
+      ],
+      "parameters": {
+        "event": "sent"
+      },
+      "credentials": {
+        "mailjetEmailApi": "mailjet creds"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "connections": {},
+  "meta": {
+    "description": "Workflow using trigger with 1 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "trigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.397903"
+  }
+}

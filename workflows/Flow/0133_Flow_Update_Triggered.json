@@ -1,0 +1,34 @@
+{
+  "id": "133",
+  "name": "Receive updates for specified tasks in Flow",
+  "nodes": [
+    {
+      "name": "Flow Trigger",
+      "type": "n8n-nodes-base.flowTrigger",
+      "position": [
+        650,
+        250
+      ],
+      "parameters": {
+        "taskIds": "",
+        "resource": "task"
+      },
+      "credentials": {
+        "flowApi": ""
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {},
+  "meta": {
+    "description": "Workflow using trigger with 1 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "trigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.582324"
+  }
+}

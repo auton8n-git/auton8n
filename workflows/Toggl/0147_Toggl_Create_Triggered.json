@@ -1,0 +1,37 @@
+{
+  "id": "138",
+  "name": "Get new time entries from Toggl",
+  "nodes": [
+    {
+      "name": "Toggl",
+      "type": "n8n-nodes-base.togglTrigger",
+      "position": [
+        650,
+        250
+      ],
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {}
+          ]
+        }
+      },
+      "credentials": {
+        "togglApi": ""
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {},
+  "meta": {
+    "description": "Workflow using Toggltrigger with 1 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "Toggltrigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.733211"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        600,
+        250
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "ActiveCampaign",
+      "type": "n8n-nodes-base.activeCampaign",
+      "position": [
+        800,
+        250
+      ],
+      "parameters": {
+        "email": "",
+        "updateIfExists": true,
+        "additionalFields": {
+          "lastName": "",
+          "firstName": ""
+        }
+      },
+      "credentials": {
+        "activeCampaignApi": "ActiveCampaign"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "ActiveCampaign",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using Trigger and Activecampaign with 2 nodes. Complexity: Low",
+    "category": "Marketing & Advertising Automation",
+    "complexity": "Low",
+    "integrations": [
+      "Trigger",
+      "Activecampaign"
+    ],
+    "analyzed_at": "2026-01-29T09:16:37.027465"
+  }
+}

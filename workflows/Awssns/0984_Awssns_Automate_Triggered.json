@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "name": "AWS-SNS-Trigger",
+      "type": "n8n-nodes-base.awsSnsTrigger",
+      "position": [
+        440,
+        300
+      ],
+      "parameters": {
+        "topic": "arn:aws:sns:ap-south-1:100558637562:n8n-rocks"
+      },
+      "credentials": {
+        "aws": "amudhan-aws"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "connections": {},
+  "meta": {
+    "description": "Workflow using trigger with 1 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "trigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.935741"
+  }
+}

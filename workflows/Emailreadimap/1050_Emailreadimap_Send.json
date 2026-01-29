@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "name": "IMAP Email",
+      "type": "n8n-nodes-base.emailReadImap",
+      "position": [
+        760,
+        400
+      ],
+      "parameters": {
+        "options": {
+          "allowUnauthorizedCerts": false
+        }
+      },
+      "credentials": {
+        "imap": "imap_creds"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "connections": {},
+  "meta": {
+    "description": "Workflow using Emailreadimap with 1 nodes. Complexity: Low",
+    "category": "AI Agent Development",
+    "complexity": "Low",
+    "integrations": [
+      "Emailreadimap"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.573055"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "52",
+  "name": "Trigger a build using the TravisCI node",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        510,
+        350
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "TravisCI",
+      "type": "n8n-nodes-base.travisCi",
+      "position": [
+        710,
+        350
+      ],
+      "parameters": {
+        "slug": "",
+        "branch": "",
+        "operation": "trigger",
+        "additionalFields": {}
+      },
+      "credentials": {
+        "travisCiApi": "travisCI"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "TravisCI": {
+      "main": [
+        []
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "TravisCI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using Trigger and Travisci with 2 nodes. Complexity: Low",
+    "category": "Technical Infrastructure & DevOps",
+    "complexity": "Low",
+    "integrations": [
+      "Trigger",
+      "Travisci"
+    ],
+    "analyzed_at": "2026-01-29T09:16:37.034469"
+  }
+}

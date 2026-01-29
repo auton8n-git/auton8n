@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    {
+      "name": "Acuity Scheduling Trigger",
+      "type": "n8n-nodes-base.acuitySchedulingTrigger",
+      "position": [
+        880,
+        400
+      ],
+      "webhookId": "b326732d-9473-469f-a421-dd823d26b945",
+      "parameters": {
+        "event": "appointment.scheduled"
+      },
+      "credentials": {
+        "acuitySchedulingApi": "acuity_creds"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "connections": {},
+  "meta": {
+    "description": "Workflow using Acuityschedulingtrigger with 1 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "Acuityschedulingtrigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.526080"
+  }
+}

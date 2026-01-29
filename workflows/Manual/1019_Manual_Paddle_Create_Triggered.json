@@ -1,0 +1,64 @@
+{
+  "id": "54",
+  "name": "Create a coupon on Paddle",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        550,
+        260
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "Paddle",
+      "type": "n8n-nodes-base.paddle",
+      "position": [
+        750,
+        260
+      ],
+      "parameters": {
+        "discountAmount": 2,
+        "additionalFields": {
+          "couponCode": "n8n-docs"
+        }
+      },
+      "credentials": {
+        "paddleApi": "paddle"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "Paddle": {
+      "main": [
+        []
+      ]
+    },
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Paddle",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using Trigger and Paddle with 2 nodes. Complexity: Low",
+    "category": "Financial & Accounting",
+    "complexity": "Low",
+    "integrations": [
+      "Trigger",
+      "Paddle"
+    ],
+    "analyzed_at": "2026-01-29T09:16:37.037110"
+  }
+}

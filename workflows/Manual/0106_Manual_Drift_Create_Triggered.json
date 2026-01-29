@@ -1,0 +1,57 @@
+{
+  "id": "125",
+  "name": "Create a contact in Drift",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "Drift ",
+      "type": "n8n-nodes-base.drift",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "email": "",
+        "additionalFields": {}
+      },
+      "credentials": {
+        "driftApi": ""
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Drift ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using t and Manualtrigger with 2 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "t",
+      "Manualtrigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.995821"
+  }
+}

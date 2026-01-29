@@ -1,0 +1,57 @@
+{
+  "id": "113",
+  "name": "Create an deal in Pipedrive",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "Pipedrive",
+      "type": "n8n-nodes-base.pipedrive",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "title": "",
+        "additionalFields": {}
+      },
+      "credentials": {
+        "pipedriveApi": ""
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Pipedrive",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using Trigger and Pipedrive with 2 nodes. Complexity: Low",
+    "category": "CRM & Sales",
+    "complexity": "Low",
+    "integrations": [
+      "Trigger",
+      "Pipedrive"
+    ],
+    "analyzed_at": "2026-01-29T09:16:36.999303"
+  }
+}

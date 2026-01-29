@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "Monday.com",
+      "type": "n8n-nodes-base.mondayCom",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "boardId": "663435997",
+        "operation": "get"
+      },
+      "credentials": {
+        "mondayComApi": "monday"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Monday.com",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using com and Manualtrigger with 2 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "com",
+      "Manualtrigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.923376"
+  }
+}

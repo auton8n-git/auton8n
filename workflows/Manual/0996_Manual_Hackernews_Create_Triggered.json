@@ -1,0 +1,50 @@
+{
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "Hacker News",
+      "type": "n8n-nodes-base.hackerNews",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "resource": "all",
+        "additionalFields": {}
+      },
+      "typeVersion": 1
+    }
+  ],
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Hacker News",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using hacker and Manualtrigger with 2 nodes. Complexity: Low",
+    "category": "Web Scraping & Data Extraction",
+    "complexity": "Low",
+    "integrations": [
+      "hacker",
+      "Manualtrigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.866595"
+  }
+}

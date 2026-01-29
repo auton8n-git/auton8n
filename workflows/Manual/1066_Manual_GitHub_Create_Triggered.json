@@ -1,0 +1,59 @@
+{
+  "id": "5",
+  "name": "new",
+  "nodes": [
+    {
+      "name": "On clicking 'execute'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        540,
+        350
+      ],
+      "parameters": {},
+      "typeVersion": 1
+    },
+    {
+      "name": "Github",
+      "type": "n8n-nodes-base.github",
+      "position": [
+        790,
+        350
+      ],
+      "parameters": {
+        "owner": "n8n-io",
+        "resource": "repository",
+        "operation": "getProfile",
+        "repository": "n8n"
+      },
+      "credentials": {
+        "githubApi": "shraddha"
+      },
+      "typeVersion": 1
+    }
+  ],
+  "active": false,
+  "settings": {},
+  "connections": {
+    "On clicking 'execute'": {
+      "main": [
+        [
+          {
+            "node": "Github",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "meta": {
+    "description": "Workflow using hub and Manualtrigger with 2 nodes. Complexity: Low",
+    "category": "Uncategorized",
+    "complexity": "Low",
+    "integrations": [
+      "hub",
+      "Manualtrigger"
+    ],
+    "analyzed_at": "2026-01-29T09:36:08.985374"
+  }
+}
