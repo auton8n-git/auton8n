@@ -108,5 +108,3 @@ When assisting with this repository:
 - Migration notes: [Any version-specific considerations]
 
 ---
-
-[中文](./CLAUDE_ZH.md)
