@@ -1,0 +1,79 @@
+{
+  "createdAt": "2026-02-01T01:58:39.747Z",
+  "updatedAt": "2026-02-01T01:59:16.327Z",
+  "id": "2osjHDbD4kymPdAC",
+  "name": "Untitled-1769911118779",
+  "active": false,
+  "isArchived": false,
+  "nodes": [],
+  "connections": {},
+  "settings": {},
+  "staticData": null,
+  "meta": null,
+  "pinData": null,
+  "versionId": "8bb72897-d925-4de1-a597-045fc61431b6",
+  "triggerCount": 0,
+  "shared": [
+    {
+      "createdAt": "2026-02-01T01:58:39.757Z",
+      "updatedAt": "2026-02-01T01:58:39.757Z",
+      "role": "workflow:owner",
+      "workflowId": "2osjHDbD4kymPdAC",
+      "projectId": "4c5dBdlytkrGjyM9",
+      "project": {
+        "createdAt": "2025-05-08T09:11:20.268Z",
+        "updatedAt": "2025-05-08T09:13:54.953Z",
+        "id": "4c5dBdlytkrGjyM9",
+        "name": "duy tran <duytran82@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "projectRelations": [
+          {
+            "createdAt": "2025-05-08T09:11:20.268Z",
+            "updatedAt": "2025-05-08T09:11:20.268Z",
+            "role": "project:personalOwner",
+            "userId": "d83b9af6-7e39-4322-888d-db5306b619fc",
+            "projectId": "4c5dBdlytkrGjyM9",
+            "user": {
+              "createdAt": "2025-05-08T09:11:19.738Z",
+              "updatedAt": "2026-02-01T01:57:28.000Z",
+              "id": "d83b9af6-7e39-4322-888d-db5306b619fc",
+              "email": "duytran82@gmail.com",
+              "firstName": "duy",
+              "lastName": "tran",
+              "personalizationAnswers": {
+                "version": "v4",
+                "personalization_survey_submitted_at": "2025-05-08T09:15:49.972Z",
+                "personalization_survey_n8n_version": "1.88.0",
+                "companySize": "<20",
+                "companyType": "systems-integrator",
+                "role": "business-owner",
+                "reportedSource": "google"
+              },
+              "settings": {
+                "userActivated": true,
+                "easyAIWorkflowOnboarded": true,
+                "firstSuccessfulWorkflowId": "MrQrAko9SmXrqQiK",
+                "userActivatedAt": 1746713131844,
+                "npsSurvey": {
+                  "responded": true,
+                  "lastShownAt": 1768443788732
+                },
+                "dismissedCallouts": {
+                  "aiAgentStarterCallout": true
+                }
+              },
+              "role": "global:owner",
+              "disabled": false,
+              "mfaEnabled": false,
+              "lastActiveAt": "2026-01-31",
+              "isPending": false
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "tags": []
+}

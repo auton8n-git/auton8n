@@ -1,0 +1,15 @@
+# PROBLEMATIC N8N WORKFLOWS
+# These workflows cannot be used or may have issues
+
+
+## MISSING REQUIRED FIELDS:
+Automate/1911_Automate.json
+Automate/1271_Automate.json
+Automate/1326_Automate.json
+Automation/2047_Automation.json
+Automation/1250_Automation.json
+Automation/1634_Automation.json
+Automation/1497_Automation.json
+Automation/1290_Automation.json
+Export/1597_Export.json
+Send/1409_Send.json

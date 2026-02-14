@@ -1,0 +1,31 @@
+# Workflows hợp lệ nhưng cần thêm trigger để tự động hóa
+# Total: 28 workflows
+
+workflows/Airtable/1220_Airtable_Lemlist_Automate.json
+workflows/Automate/1123_Automate.json
+workflows/Autopilot/1227_Autopilot_Automate.json
+workflows/Awsrekognition/0150_Awsrekognition_GoogleSheets_Automation_Webhook.json
+workflows/Bitwarden/0003_Bitwarden_Automate.json
+workflows/Create/1124_Create.json
+workflows/Create/1125_Create.json
+workflows/Emelia/1214_Emelia_Automate.json
+workflows/Functionitem/0184_Functionitem_Itemlists_Automate.json
+workflows/Gmail/0036_Gmail_GoogleDrive_Import.json
+workflows/Gmail/0221_Gmail_Movebinarydata_Send.json
+workflows/Googlesheets/1153_GoogleSheets_Orbit_Automation.json
+workflows/Gotowebinar/1213_Gotowebinar_Automate.json
+workflows/Http/0153_HTTP_Dropbox_Update_Webhook.json
+workflows/Http/0156_HTTP_Awsrekognition_Automation_Webhook.json
+workflows/Http/0223_HTTP_GoogleSheets_Automation_Webhook.json
+workflows/Http/0549_HTTP_Filter_Monitor_Webhook.json
+workflows/Http/0551_HTTP_Stickynote_Create_Webhook.json
+workflows/Http/0622_HTTP_Stickynote_Create_Webhook.json
+workflows/Http/0955_HTTP_Automation_Webhook.json
+workflows/Http/1233_HTTP_Deepl_Automation_Webhook.json
+workflows/Mailcheck/0026_Mailcheck_Airtable_Monitor.json
+workflows/Openai/0785_Openai_Twitter_Create.json
+workflows/Process/0009_Process.json
+workflows/Quickbooks/1208_Quickbooks_Automate.json
+workflows/Raindrop/1209_Raindrop_Automate.json
+workflows/Uptimerobot/0050_Uptimerobot_Automate.json
+workflows/Wise/1229_Wise_Automate.json
